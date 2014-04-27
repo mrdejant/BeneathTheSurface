@@ -1,7 +1,7 @@
 Beneath The Surface Of The Scratch Ticket
 =================
 
-This is my ludum dare 29 entry. Theme was beneath the surface.
+This is my ludum dare 29 entry. Theme was "Beneath the surface".
 
 Game was made in 48 hours using Eclipse and LibGdx. 
 
