@@ -77,9 +77,11 @@ public class CounterScreen extends Group {
 		
 		float ticketSize = 100;
 		
-		button1.setPosition(10, 130 - button1.getHeight()*1.1f);
 		
-		button2.setPosition(button1.getX() + ticketSize*1.1f, button1.getY());
+		
+		button2.setPosition(width/2f - ticketSize*1.05f, 130 - button2.getHeight()*1.1f);
+		
+		button1.setPosition(button2.getX() - ticketSize*1.1f, button2.getY());
 		
 		button5.setPosition(button2.getX() + ticketSize*1.1f, button1.getY());
 		

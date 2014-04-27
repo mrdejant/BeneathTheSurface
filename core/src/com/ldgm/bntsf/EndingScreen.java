@@ -46,13 +46,13 @@ public class EndingScreen extends Group {
 	
 	public void setScore(int score){
 		if(score == 0){
-			endMessage.setText("YOU LOST ALL YOUR MONEY. YOU CAN DO BETTER!\n"+score+"$");
+			endMessage.setText("YOU LOST ALL YOUR MONEY. TRY AGAIN!\n"+score+"$");
 		}else if(score <= 2){
-			endMessage.setText("YOU DID NOT LOST ALL YOUR MONEY!\nBUT YOU CAN DO BETTER!\n"+score+"$");
+			endMessage.setText("NOT MUCH OF A SCORE,BUT YOU DID NOT LOST ALL YOUR MONEY!\n"+score+"$");
 		}else if(score <= 10){
-			endMessage.setText("YOU ARE GETTING PREETY GOOD AT THIS!\nBUT YOU CAN DO BETTER!\n"+score+"$");
-		}else if(score <= 100){
-			endMessage.setText("WOW, YOU SHOULD QUIT YOUR JOB!\nBUT YOU CAN DO BETTER!\n"+score+"$");
+			endMessage.setText("YOU ARE GETTING PREETY GOOD AT THIS!\n"+score+"$");
+		}else if(score <= 120){
+			endMessage.setText("WOW, YOU SHOULD QUIT YOUR JOB!\n"+score+"$");
 		}else{
 			endMessage.setText("DAMN! THAT'S A LOT OF MONEY!\nCONGRATULATIONS!\n"+score+"$");
 		}

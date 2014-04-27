@@ -157,6 +157,17 @@ public class TicketScreen extends Group {
 	}
 	
 	public void nextTicket(boolean force){
+		if(ticketPrice == 1){
+			scratchLimit = (float)Math.random()*0.03f + 0.085f;
+		}else if(ticketPrice == 2){
+			scratchLimit = (float)Math.random()*0.015f+0.06f;
+		}else if(ticketPrice == 5){
+			scratchLimit = (float)Math.random()*0.01f+0.04f;
+		}else if(ticketPrice == 10){
+			scratchLimit = (float)Math.random()*0.01f+0.03f;
+		}
+		//System.out.println(ticketPrice+" "+scratchLimit);
+		
 		if(!force && currentTicket.getScratchedRegion() == 0){
 			return;
 		}
@@ -178,15 +189,7 @@ public class TicketScreen extends Group {
 		isPaid = false;
 		isScored = false;
 		
-		if(ticketPrice == 1){
-			scratchLimit = (float)Math.random()*0.05f+0.10f;
-		}else if(ticketPrice == 2){
-			scratchLimit = (float)Math.random()*0.05f+0.08f;
-		}else if(ticketPrice == 5){
-			scratchLimit = (float)Math.random()*0.05f+0.05f;
-		}else if(ticketPrice == 10){
-			scratchLimit = (float)Math.random()*0.05f+0.03f;
-		}
+		
 		
 		
 	}

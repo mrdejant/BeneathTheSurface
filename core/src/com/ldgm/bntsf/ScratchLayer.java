@@ -116,7 +116,7 @@ public class ScratchLayer extends Group {
 	}
 	
 	public float getClearedRegion(){
-		ByteBuffer bb = pixmap.getPixels();
+		ByteBuffer bb = (ByteBuffer)pixmap.getPixels();
 		int pos = bb.position();
 		bb.position(0);
 		int all = bb.limit()/4;
@@ -134,7 +134,6 @@ public class ScratchLayer extends Group {
 	
 	@Override
 	public void draw(Batch batch, float parentAlpha) {
-		// TODO Auto-generated method stub
 		super.draw(batch, parentAlpha);
 		sprite.draw(batch);
 		sprite.draw(batch);
@@ -149,7 +148,6 @@ public class ScratchLayer extends Group {
 	
 	@Override
 	public void setPosition(float x, float y) {
-		// TODO Auto-generated method stub
 		super.setPosition(x, y);
 		sprite.setPosition(x, y);
 	}
